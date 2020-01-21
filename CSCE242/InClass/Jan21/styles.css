@@ -6,4 +6,5 @@ div {
     background:lightpink;
     padding: 20px;
     width: 75%;
+    margin: auto; /*center horizontally*/
 }
