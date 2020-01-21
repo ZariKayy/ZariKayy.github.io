@@ -1,0 +1,52 @@
+body {
+    background-image: url("Images/medallion.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: gray;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+p {
+    background: black;
+}
+h1 {
+    color: rgb(221, 190, 15);
+    background: black;
+    
+}
+h2 {
+    color: rgb(110, 45, 26);
+    background: black;
+}
+h3 {
+    color: rgb(105, 105, 15);
+    background: black;
+}
+div {
+    
+    display: inline-block;
+    background: gray;
+    margin: auto;
+    padding: 5px;
+    width: 30%;
+
+}
+a:hover{
+    background: rgb(221, 190, 15);
+}
+img{
+    background: rgb(110, 45, 26);
+    padding: 15px;
+    margin: auto;
+    border: 10px solid white;
+}
+table {
+    background: rgb(110, 45, 26);
+    padding: 15px;
+    margin: auto;
+    border: 10px solid white;
+}
+ol {
+    background: black;  
+    background-size: cover;  
+}
