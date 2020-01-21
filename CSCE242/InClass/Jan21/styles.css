@@ -9,3 +9,10 @@ div {
     width: 75%;
     margin: auto; /*center horizontally*/
 }
+h1 {
+    color: darkolivegreen;
+}
+li {
+    list-style-type: none;
+    display: inline-block;
+}
