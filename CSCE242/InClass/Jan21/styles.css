@@ -16,3 +16,9 @@ li {
     list-style-type: none;
     display: inline-block;
 }
+td {
+    border: 1px solid gray;
+    background: rebeccapurple;
+    padding: 5px;
+
+}
