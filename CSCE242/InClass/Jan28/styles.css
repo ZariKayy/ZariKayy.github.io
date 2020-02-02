@@ -1,0 +1,38 @@
+img {
+    display: block;
+}
+
+#main-header {
+    color: salmon;
+    padding: 10px;
+}
+
+#main-content h1 {
+    color: mediumseagreen;
+    text-align: center;
+}
+
+#doggo-cols {
+    color: sandybrown;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#main-footer {
+    color: seagreen;
+    padding: 10px;
+}
+
+.col1o3 {
+    background-color: lightsteelblue;
+    color: slateblue;
+    padding: 10px;
+    flex-basis: 30%;
+}
+
+#specialCol {
+    color: slategray;
+    padding: 10px;
+}

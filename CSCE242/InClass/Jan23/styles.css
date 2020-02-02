@@ -1,0 +1,47 @@
+body {
+    background-image: url("images/cute-dabbing-cow-sunglass-260nw-1331303612.jpg");
+    background-attachment: fixed;
+}
+#content:div {
+    color: white;
+    background: rgb(243, 147, 179, 0.9);
+    padding: 20px;
+    text-align: center;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 5px 10px rgb(235, 235, 66, 0.9);
+   
+}
+h1 {
+    font-family: cursive;
+}
+#mainNav li {
+    list-style-type: none;
+    display: inline-block;
+}
+li {
+    list-style-type: none;
+    display: inline-block;
+    font-family: cursive;
+}
+p {
+    background: rgb(235, 235, 66, 0.9);
+    color: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow:5px 10px rgb(243, 147, 179, 0.9);
+    font-weight: bold;
+    font-family: cursive;
+}
+a:any-link {
+    text-decoration: none;
+    color: white;
+    border: 5px solid transparent;
+}
+a:hover {
+    color: purple;
+    border-bottom: 2px solid yellow;
+}
+#hypnoCow:hover {
+    border: 5px dotted purple;
+}

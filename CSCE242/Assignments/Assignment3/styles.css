@@ -1,0 +1,126 @@
+body {
+    font-family: fantasy;
+    background-image: url(images/background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+#mainHeader {
+    background:#ffbcd9;
+    padding:10px;
+    margin:5px;
+    
+}
+#navBar li {
+    list-style-type: none;
+    background: #9BE1E1;
+    padding:15px;
+    margin: .5px;
+    text-align:center;
+}
+#navBar a {
+    text-decoration: none;
+}
+.mainContent {
+    display: flex;
+}
+.secc {
+    flex: 2 1 500px;
+    flex-direction: column;
+    background: #9BE1E1;
+    margin: 5px;
+    padding: 10px;
+    align-items: stretch;
+    
+}
+.aside {
+    flex: 1 2 auto;
+    flex-direction: column;
+    background: #9BE1E1;
+    margin: 5px;
+    align-items: stretch;
+    
+}
+.cols section {
+    padding: 10px;
+    margin: 5px;
+    background: #9BE1E1;
+    border: 5px solid #ffbcd9;
+    justify-content: space-between;
+    
+    
+}
+.nestedCols section {
+    padding: 10px;
+    margin: 5px;
+    background: #ffbcd9;
+    text-align: center;
+}
+h1 {
+    display: flex;
+    justify-content: center;
+}
+.images ul li{
+    margin: auto;
+    display: inline;
+    justify-content: center;
+}
+.images section {
+    padding: 10px;
+    margin: 5px;
+    
+}
+.footer {
+    background: #ffbcd9;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    padding-bottom: 0px;
+    height: 100px;
+}
+.middleFoot {
+    line-height: 10px;
+    align-self: flex-start;
+}
+.address {
+    align-self: flex-end;
+    line-height: 10px;
+}
+.addy1 {
+    align-self: flex-end;
+}
+@media(min-width: 900px) {  /*big screen*/
+    #navBar ul, .cols, .nestedCols, .images, .mainContent, #images ul  {
+        display: flex;
+
+    }
+    
+    #navBar ul li, .cols section, .nestedCols section, .images section, #images ul {
+        flex: 1;
+        
+    }
+}
+@media(max-width: 900px) {   /*small screen*/
+    #navBar ul {
+        display: flex;
+        flex-direction: column;
+    }
+    .mainContent {
+        flex-direction: column;
+    }
+    .secc {
+        flex: auto;
+    }
+    .images {
+        display: flex;
+        justify-content: center;
+    }
+    .footer {
+        flex-direction: column;
+        justify-content: center;
+        padding: 25px;
+    }
+    .middleFoot, .address {
+        align-self: center;
+    }
+}
