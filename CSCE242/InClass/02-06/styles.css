@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: steelblue;
+}
+.top-container {
+    display: flex;
+}
+.example{
+    flex: auto;
+    background: white;
+    justify-content: space-evenly;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+}
+.example h1 {
+    text-align: center;
+}
+.example label {
+    display: block;
+    padding: 5px;
+    width: 100%;
+    text-align: center;
+
+}
+.example input {
+    width: 100%;
+    display: block;
+}
+.example button {
+    width: 100%;
+    padding: 5px;
+}
+.example input:focus {
+    background: salmon;
+}
+
+@media(min-width:900px){ /*big screen*/
+     .top-container {
+         display: flex;
+     }
+     .example p {
+         display: flex;
+     }
+     .example label {
+         width: 100px;
+         text-align: right;
+         padding-right: 5px;
+     }
+     .example input {
+         width: 50%;
+     }
+     .example button {
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+}

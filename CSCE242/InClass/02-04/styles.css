@@ -1,0 +1,14 @@
+button {
+    height: 100px;
+    width: 100px;
+    font-size: 25px;
+}
+#btn-boy {
+    background: blue;
+}
+#btn-girl {
+    background: pink;
+}
+#face {
+    background: yellow;
+}

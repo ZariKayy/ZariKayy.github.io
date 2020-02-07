@@ -1,0 +1,54 @@
+body {
+    background: crimson;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+.box {
+    border-radius: 5px;
+    background: wheat;
+    padding: 10px;
+    margin: 10px;
+    width: 500px;
+}
+.box p, .button {
+    display: flex;
+    justify-content: center;
+}
+
+.box label {
+    display: block;
+    padding: 5px;
+    width: 25%;
+    text-align: center;
+}
+.box input {
+    width: 50%;
+    display: block;
+}
+.box button {
+    font-size: 15px;
+    background: yellow;
+    width: 50%;
+    padding: 5px;
+}
+.box button:hover, input:hover {
+    background: crimson;
+}
+.box input:focus {
+    background: yellow;
+}
+#results {
+    font-size: 20px;
+    text-align: left;
+}
