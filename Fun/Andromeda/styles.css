@@ -1,0 +1,122 @@
+body {
+    font-family: fantasy;
+    background-image: url(images/sunmoonbckgrnd.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+.zodiac-calculator-body {
+    background-image: url(images/blckgoldsunmoonbckgrnd.jpg);
+}
+.my-chart-body {
+    background-image: url(images/tealemptychartbckgrnd.jpg);
+}
+.sun-signs-body {
+    background-image: url(images/plainconstbckgrnd.jpg);
+}
+.title-container {
+    display: flex;
+    justify-content: center;
+}
+.title {
+    font-size: 100px;
+    background-color: rgb(165, 118, 135, 0.9);
+    width: fit-content;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+.nav-container {
+    background-color: rgb(77, 107, 127, 0.9);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    margin: 10px;
+}
+.nav-container section {
+    border-radius: 5px;
+    display: inline-flex;
+    background: rgb(239, 176, 154, 0.8);
+    padding: 10px;
+    margin: 10px;
+}
+.nav-container a {
+    text-decoration: none;
+    font-size: 30px;
+    color: white;
+}
+.nav-container a:hover {
+    color: rgb(165, 118, 135); 
+}
+#house {
+    font-size: 50px;
+    height: 70px;
+    width: 30px;
+    color: rgb(94, 84, 105);
+}
+.header-container {
+    background-color: rgb(165, 118, 135, 0.9);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+}
+.header-container section {
+    font-size: 25px;
+}
+.mnc-main-content {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(239, 176, 154, 0.9);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+
+}
+.mnc-main-content section{
+    background-color: rgb(109, 129, 157);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+#my-chart-img {
+    height: 450px;
+}
+.short-chart li{
+    display: inline;
+    padding: 20px;
+}
+.sun-sign-body, .moon-sign-body, .rising-sign-body, .mercury-sign-body, .venus-sign-body, .mars-sign-body, .jupiter-sign-body, .saturn-sign-body, .uranus-sign-body, .neptune-sign-body, .pluto-sign-body {
+    padding: 5px;
+    text-align: left;
+    line-height: 25px;
+}
+#dash {
+    text-align: center;
+}
+
+
+
+@media(max-width:900px){
+    .nav-container section {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    .mnc-main-content, .mnc-main-content section {
+        flex-direction: column;
+    }
+}
+@media(min-width:900px) {
+    .mnc-main-content, .mnc-main-content section {
+        flex-direction: column;
+    }
+}
