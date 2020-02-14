@@ -66,6 +66,10 @@ body {
     padding: 5px;
     border-radius: 5px;
 }
+.nav-bar a{
+    text-decoration: none;
+    color: #FFFF99;
+}
 #current-ex {
     border-bottom: 5px solid darkgray;
 }
