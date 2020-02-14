@@ -5,20 +5,44 @@
         <title></title>        
     </head>
     <body>
-        <nav class="nav-container">
-            <img src="images/UofSClogo.png" alt="UofSC logo" height="50px" width="50px">
-            <p id="SC">South Carolina</p>
-            <div id="block"></div>
-            <a class= "search-toggle" href="#"><img src="images/search.png" alt="search" height="50px" width="50px
-                "></a>
-            <div id="nav-toggle">
-                <div></div>
-                <div></div>
-                <div></div>
+        <div class="fixed-bar">
+            <div class="gateway-bar">
+                <section>
+                    <ul>
+                        <li><b>GATEWAYS FOR:</b></li>
+                        <li><a href="#">STUDENTS</a></li>
+                        <li><a href="#">FACULTY & STAFF</a></li>
+                        <li><a href="#">ALUMNI</a></li>
+                        <li><a href="#">PARENTS</a></li>
+                    </ul>
+                </section>
+                <section>
+                    <ul id="site-map-links">
+                        <li><a href="#">CALENDAR</a></li>
+                        <li><a href="#">MAP</a></li>
+                        <li><a href="#">DIRECTORY</a></li>
+                        <li id="last-map"><a href="#">GIVE</a></li>
+                    </ul>
+                </section>
             </div>
-        </nav>
+            <nav class="nav-container">
+                <img id= "logo" src="images/UofSClogo.jpg" alt="UofSC logo" height="35px" width="35px">
+                <p id="SC">South Carolina</p>
+                <div id="block"></div>
+                <a class= "search-toggle" href="#"><img src="images/search.png" alt="search" height="50px" width="50px
+                    "></a>
+                <div id="nav-toggle">
+                    <p>MENU</p>
+                    <section><div></div></section>
+                    <section><div></div></section>
+                    <section><div></div></section>
+                    
+                </div>
+                <input id="search" placeholder="SEARCH SC.EDU                 &#x1F50D">
+            </nav>
+        </div>
         <div class="toggle-container">
-            <ul id="main-nav-items">
+            <ul id="main-nav-items" class="hidden">
                 <li><a href="#">Study</a></li>
                 <li><a href="#">Experience</a></li>
                 <li><a href="#">Visit</a></li>
@@ -28,6 +52,21 @@
                 <li><a href="#">News & Events</a></li>
                 <li><a href="#">Athletics</a></li>
             </ul>
+        </div>
+        <div id="block1"></div>
+        <div class="long-nav">
+            <nav id = "long-items" class="hidden">
+                <ul>
+                    <li><a href="#">STUDY</a></li>
+                    <li><a href="#">EXPERIENCE</a></li>
+                    <li><a href="#">VISIT</a></li>
+                    <li><a href="#">APPLY</a></li>
+                    <li><a href="#">RESEARCH</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">NEWS & EVENTS</a></li>
+                    <li><a href="#">ATHLETICS</a></li>
+                </ul>
+            </nav>
         </div>
         <img id="main-img" src="images/mainImage.png" alt="students looking at motherboard">
         <div class="mission-statement">
@@ -68,8 +107,14 @@
                 </a>
             </section>
         </div>
+        <nav class="hidden" class="top-footer" >
+            <img id= "logo" src="images/UofSClogo.jpg" alt="UofSC logo" height="35px" width="35px">
+            <p id="SC">South Carolina</p>
+            <div id="block"></div>
+            <img src="images/footercontact.png" alt="USC contact">
+        </nav>
         <div class="footer">
-            <div class="footer-image"><img src="images/footerheader.png" alt="usc footer"></div>
+            <div class="footer-image" ><img src="images/footerheader.png" alt="usc footer" height="250px" width="400px"></div>
             <section>
                 <h4>COLLEGES & SCHOOLS</h4>
                 <ul id="first-footer-sec">
@@ -93,7 +138,7 @@
             </section>
             <section>
                 <h4>OFFICES & DIVISIONS</h4>
-                <ul>
+                <ul id="second-footer-sec">
                     <li><a href="#">Working at UofSC</a></li>
                     <li><a href="#">Undergraduate Admissions</a></li>
                     <li><a href="#">Financial Aid and Scholarships</a></li>
