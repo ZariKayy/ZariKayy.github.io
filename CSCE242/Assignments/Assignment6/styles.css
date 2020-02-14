@@ -1,0 +1,152 @@
+body {
+    background: lightgray;
+    
+}
+.hidden {
+    display: none;
+}
+.error {
+    color: red;
+}
+.title {
+    background: #FFFF99;
+    color: lightskyblue;
+    font-size: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 5px;
+}
+.title h1 {
+    text-align: center;
+}
+/* Nav Bar Toggle */
+#hamburger div {
+    border-radius: 5px;
+    width: 65px;
+    height: 15px;
+    background-color: lightskyblue;
+    margin:6px 0;
+    cursor: pointer;
+}
+#hamburger #middle-burger {
+    background: #FFFF99;
+}
+#main-nav ul{
+    background: lightskyblue;
+    list-style-type: none;
+    padding: 0px;
+    text-align: center;
+    font-size: 20px;
+    height: auto;
+    border-radius: 5px;
+}
+#main-nav-items li{
+    padding: 5px;
+}
+#main-nav a {
+    text-decoration: none;
+    color: #FFFF99;
+}
+#main-nav li:hover {
+    background: #FFFF99;
+}
+#main-nav a:hover, #main-nav li:hover {
+    color: lightskyblue;
+}
+.nav-bar {
+    color: #FFFF99;
+    display: none;
+    justify-content: space-around;
+}
+.nav-bar section {
+    display: flex;
+    justify-content: center;
+    background: lightskyblue;
+    width: 50%;
+    padding: 5px;
+    border-radius: 5px;
+}
+#current-ex {
+    border-bottom: 5px solid darkgray;
+}
+.main-content {
+    background: #FFFF99;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 5px;
+    height: auto;
+}
+.main-content h1 {
+    display: flex;
+    justify-content: center;
+}
+.main-content label{
+    display: inline-block;
+    float: left;
+    clear: left;
+    width: 250px;
+    text-align: right;
+    
+}
+.main-content input {
+    display: inline-block;
+    float: left;
+}
+.main-content input:hover, .main-content input:focus {
+    background: lightskyblue;
+    color: #FFFF99;
+}
+.main-content button{
+    background: lightskyblue;
+    color: #FFFF99;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 10px;
+    margin-left: 45%;
+    
+}
+.thermometer {
+    display: flex;
+    background: white;
+    height: 500px;
+    width: 100px;
+    margin-left: 43%;
+    margin-bottom: 15px;
+
+}
+.full {
+    background: red;
+}
+.almostfull {
+    background: linear-gradient(0deg, rgba(255,0,0,1) 0%, rgba(255,0,0,1) 90%, rgba(255,255,255,1) 90%, rgba(255,255,255,1) 100%);
+}
+.seventyfive {
+    background: linear-gradient(0deg, rgba(255,0,0,1) 0%, rgba(255,0,0,1) 75%, rgba(255,255,255,1) 75%, rgba(255,255,255,1) 100%);
+}
+.half {
+    background: linear-gradient(0deg, rgba(255,1,1,1) 0%, rgba(255,1,1,1) 50%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 100%);
+}
+.twentyfive {
+    background: linear-gradient(0deg, rgba(255,0,0,1) 0%, rgba(255,0,0,1) 25%, rgba(255,255,255,1) 25%, rgba(255,255,255,1) 100%);
+}
+.empty {
+    background: white;
+}
+
+/*Larger Screens Only*/
+@media(min-width: 900px) {
+    .nav-bar {
+        display: flex;
+    }
+    #main-nav {
+        display: none;
+    }
+    .button {
+        margin-left: 300px;
+        margin-right: 300px;
+    }
+    #thermo-input {
+        margin-left: 15%;
+    }
+}

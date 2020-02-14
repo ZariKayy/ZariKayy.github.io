@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <title></title>        
+    </head>
+    <body>
+        <div class="title">
+            <h1>If Statement Assignment</h1>
+        </div>
+
+        <nav id="main-nav">
+            <div id="hamburger">
+                <div></div>
+                <div id="middle-burger"></div>
+                <div></div>
+            </div>
+            <ul class = "hidden"id="main-nav-items">
+                <li><a href="../Assignment6/index.html"><h2>Excersize 1</h2></a></li>
+                <li><a href="../Assignment6/Ex2.html"><h2>Excersize 2</h2></a></li>
+            </ul>
+        </nav>
+        <div class="nav-bar">
+            <section><h2>Excersize 1</h2></section>
+            <section id="current-ex"><h2>Excersize 2</h2></section>
+        </div>
+        <div class="main-content">
+            <h1>Fund Raising</h1>
+            <h2>Goal: $10,000.00</h2>
+            <p id="thermo-input">
+                <label for="funds-raised-txt">Funds Raised: </label>
+                <input id="funds-raised-txt">
+                <span id="error-funds" class="error hidden">* blank</span>
+            </p>
+            <div id="thermometer-bar"class="thermometer"><div></div></div>
+            <div class="button"><button id="goal-display">Display</button></div>
+            <p id="goal-result"></p>
+        </div>
+        
+        <script src="script2.js"></script>
+    </body>
+</html>
