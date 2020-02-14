@@ -25,13 +25,13 @@ body {
     color: lightyellow;
     text-decoration: underline;
 }
-.assignments-container1, .assignments-container2 {
+.assignments-container {
     display: flex;
     flex-direction: column;
     padding: 10px;
     margin: 20px;
 }
-.assignments-container1 section, .assignments-container2 section {
+.assignments-container section{
     width: 500px;
     background: rgba(50, 255, 234, 0.7);
     border-radius: 10px;
@@ -39,7 +39,7 @@ body {
     padding: 10px;
     margin: 10px;
 }
-.assignments-container1 a, .assignments-container2 a {
+.assignments-container a {
     text-decoration: none;
     padding: 5px;
     color:rgba(252, 163, 141);
@@ -49,7 +49,7 @@ body {
 a:hover {
     color: rgb(248, 248, 118);
 }
-.assignments-container1 img, .assignments-container2 img {
+.assignments-container img {
     display: block;
 }
 #img {
@@ -86,7 +86,7 @@ a:hover {
 }
 
 @media(min-width:900px){ /*big screen*/
-    .assignments-container1, .assignments-container2 {
+    .assignments-container {
         flex-direction: row;
         justify-content: space-evenly;
     }
