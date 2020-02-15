@@ -21,16 +21,15 @@ function displayOldest() {
 
     //sort results
     var ages = [firstAge, secondAge, thirdAge]
-    ages.sort();
+    ages.sort(function(a, b){return b-a});
     var sortedNames = [];
-    var i;
     
     if(ages[0] == firstAge) {
-        sortedNames[2] = firstName;
+        sortedNames[0] = firstName;
     } else if(ages[0] == secondAge) {
-        sortedNames[2] = secondName;
+        sortedNames[0] = secondName;
     } else if(ages[0] == thirdAge) {
-        sortedNames[2] = thirdName;
+        sortedNames[0] = thirdName;
     } else {
         sortedNames[2] = "?";
     }
@@ -46,11 +45,11 @@ function displayOldest() {
     }
 
     if(ages[2] == firstAge) {
-        sortedNames[0] = firstName;
+        sortedNames[2] = firstName;
     } else if(ages[2] == secondAge) {
-        sortedNames[0] = secondName;
+        sortedNames[2] = secondName;
     } else if(ages[2] == thirdAge) {
-        sortedNames[0] = thirdName;
+        sortedNames[2] = thirdName;
     } else {
         sortedNames[0] = "?";
     }
@@ -62,9 +61,6 @@ function displayOldest() {
     displayOldest.classList.add(firstAge.toLowerCase());
     displayOldest.classList.add(secondAge.toLowerCase());
     displayOldest.classList.add(thirdAge.toLowerCase());
-
-    //Debug
-    console.log("HELLOOOO");
 }
 
 function isBlank(data, errorSpanId){
