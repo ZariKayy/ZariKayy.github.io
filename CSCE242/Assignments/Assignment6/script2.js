@@ -3,7 +3,6 @@ function displayThermo() {
     const fundsRaised = document.getElementById("funds-raised-txt").value;
     const thermometer = document.getElementById("thermometer-bar");
 
-    let displayThermo = document.getElementById("thermometer-bar");
     //validate data
     const goalError = isBlank(fundsRaised, "error-funds");
 

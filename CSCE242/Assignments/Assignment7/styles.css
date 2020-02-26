@@ -1,0 +1,55 @@
+body {
+    background: #333333;
+}
+.hidden {
+    display: none;
+}
+.error {
+    color: red;
+}
+.content {
+    display: flex;
+    justify-content: space-around;
+    
+}
+.content section {
+    border-radius: 5px;
+    background: #3498F7;
+    margin: 5px;
+    padding: 10px;
+    width: 50%;
+}
+.content #man-box {
+    position: relative;
+    align-self: center;
+    width: 40%;
+    padding-bottom: 35px;
+    height: 150px;
+}
+#still-man {
+    position: absolute;
+}
+.content h1 {
+    text-align: center;
+}
+.input, .button {
+    display: inline-flex;
+    height: 30px;
+    
+}
+#thermometer {
+    display: flex;
+    background: white;
+    height: 300px;
+    width: 100px;
+    margin-left: 43%;
+    margin-bottom: 15px;
+}
+
+#progress {
+    display: flex;
+    align-self: flex-end;
+    height: 1%;
+    width: 100%;
+    background: red;
+}
