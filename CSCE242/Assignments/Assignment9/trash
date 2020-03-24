@@ -1,0 +1,77 @@
+working for one then breaking
+
+class Toy {
+    constructor(name, price, ageRange, rating, picture) {
+        this.name = name;
+        this.price = price;
+        this.ageRange = ageRange;
+        this.rating = rating;
+        this.picture = picture;
+    }
+    get toyDetails() {
+        //containers
+        let toysContainer = document.getElementById("toys-div")
+        let toyBox = document.getElementById("toy-box");
+
+        //name
+        let displayedName = document.createElement("h2");
+        displayedName.innerText = this.name;
+        toyBox.append(displayedName);
+
+        //picture
+        let toyPic = document.createElement("img");
+        toyPic.classList.add("image");
+        toyPic.src = `images/${this.picture}`;
+        toysContainer.append(toyPic);
+    
+        //info list
+        let ulElem = document.createElement("ul");
+        toyBox.append(ulElem);
+        
+        //price
+        let displayedPrice = document.createElement("li");
+        displayedPrice.innerHTML = `<strong>Price:</strong> ${this.price}`;
+        ulElem.append(displayedPrice);
+
+        //age range
+        let displayedAgeRange = document.createElement("li");
+        displayedAgeRange.innerHTML = `<strong>Age Range: </strong> ${this.ageRange}`;
+        ulElem.append(displayedAgeRange);
+        
+        //rating
+        let displayedRating = document.createElement("li");
+        displayedRating.innerHTML = `<strong>Rating: </strong> ${this.rating}`;
+        ulElem.append(displayedRating);
+
+
+        return toysContainer;
+    }
+    get toyItem() {
+        
+    }
+
+}
+
+function createToy() {
+    let toys = [];
+    toys.push(new Toy("American Girl Doll", "$38.88", "5-7", "4 stars", "walkingMan.svg"));
+    toys.push(new Toy("Play House", "$100", "5-10",  "5 stars", "walkingMan.svg"));
+    toys.push(new Toy("Tricycle", "$75.99", "3-7", "3.5 stars", "walkingMan.svg"));
+    toys.push(new Toy("Tricycle", "$75.99", "3-7", "3.5 stars", "walkingMan.svg"));
+    toys.push(new Toy("Tricycle", "$75.99", "3-7", "3.5 stars", "walkingMan.svg"));
+    toys.push(new Toy("Tricycle", "$75.99", "3-7", "3.5 stars", "walkingMan.svg"));
+   
+   
+    let toysListDiv = document.getElementById("toys-div");
+   
+    for(let i in toys){
+        toysListDiv.append(toys[i].toyDetails);
+    }
+}
+
+
+
+
+window.onload = function() {
+ this.createToy();
+}
