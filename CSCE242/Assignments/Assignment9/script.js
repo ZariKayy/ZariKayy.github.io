@@ -8,8 +8,13 @@ class Toy {
     }
     get toyDetails() {
         //containers
-        let toysContainer = document.getElementById("toys-div")
-        let toyBox = document.getElementById("toy-box");
+        //let toysContainer = document.getElementById("toys-div")
+        //let toyBox = document.getElementById("toy-box");
+
+        let toyBox = document.createElement("div");
+        toyBox.id = "YOLO";
+        let toysContainer = document.createElement("div");
+
 
         //name
         let displayedName = document.createElement("h2");
@@ -20,7 +25,7 @@ class Toy {
         let toyPic = document.createElement("img");
         toyPic.classList.add("image");
         toyPic.src = `images/${this.picture}`;
-        toysContainer.append(toyPic);
+        toyBox.append(toyPic);
     
         //info list
         let ulElem = document.createElement("ul");
@@ -42,7 +47,7 @@ class Toy {
         ulElem.append(displayedRating);
 
 
-        return toysContainer;
+        return toyBox;
     }
     //get toyItem() {
         //???
