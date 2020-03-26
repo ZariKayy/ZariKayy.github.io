@@ -1,0 +1,38 @@
+body {
+    background-color: black;
+    color: white;
+}
+#movies-section {
+    background: gray;
+    border-radius: 5px;
+    padding: 20px;
+}
+#movies-section h1 {
+    color: darkred;
+}
+.one-movie-section {
+    background: darkred;
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    margin: 20px;
+    box-shadow: 10px 10px black;
+    align-items: center;
+}
+.one-movie-section h3 {
+    padding: 15px;
+    text-align: center;
+    margin-right: -20px;
+}
+.one-movie-section ul {
+    list-style-type: none;
+}
+.movieImg {
+    height: 150px;
+    width: 150px;
+    transition: transform .2s;
+    border: 4px solid gray;
+}
+.movieImg:hover {
+    transform: scale(2);
+}
