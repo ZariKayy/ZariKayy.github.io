@@ -1,0 +1,134 @@
+body {
+    font-family:fantasy;
+    background:rgb(134, 94, 6);
+}
+
+.example {
+    background:rgb(0, 0, 0);
+    padding:10px;
+    margin:10px;
+    border-radius:5px;
+    min-height:200px;
+}
+
+.example h1 {
+    text-align:center;
+    color: white;
+}
+
+#main-header h1 {
+    text-align:center;
+    color:#fff;
+
+}
+
+#brews-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+}
+
+.one-brew-section h3 {
+    color: white;
+    margin-top: 50px;
+}
+
+.one-brew-section {
+    text-align: center;
+    width: 65%;
+    height: 55%;
+    background-image: url(images/kegg.png);
+    background-repeat: no-repeat;
+    background-size: 500px 500px;
+    font-size: 28px;
+}
+
+.one-brew-section ul {
+    list-style-type: none;
+    font-weight: 900;
+}
+
+.one-brew-section a {
+    text-decoration: none;
+    color: black;
+    -webkit-text-stroke: .09px white;
+}
+
+.one-brew-section:hover {
+    background-image: url(images/beer.png);
+}
+.one-brew-section:hover h3 {
+    color: black;
+    background: gray;
+}
+.one-brew-section:hover ul {
+    color: rgb(88, 88, 88);
+}
+/* Nav Bar */
+#main-nav ul {
+    list-style-type: none;
+    padding-left:0;
+}
+
+#main-nav li {
+    background:rgb(0, 0, 0);
+    padding:10px;
+    margin:2px 0;
+}
+
+#main-nav a {
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+    cursor:pointer;
+}
+
+/* Nav Bar Toggle */
+#nav-toggle div {
+    width: 35px;
+    height: 5px;
+    background-color:black;
+    margin:6px 0;
+}
+
+/* Large Resolutions Only */
+@media(min-width:900px){
+    #content {
+        display:flex;
+        flex-wrap:wrap;
+    }
+
+    .example {
+        width:30%;
+    }
+
+    .largewidth {
+        width:80%;
+        margin:auto;
+    }
+
+    .example p {
+        display:flex;
+    }
+
+    /* Navigation */
+    #nav-toggle {
+        display:none;
+    }
+
+    #main-nav ul {
+        display:flex;
+    }
+
+    #main-nav li {
+        background:transparent;
+    }
+
+    #main-nav a {
+        border-bottom: 2px solid transparent;
+    }
+
+    #main-nav a:hover {
+        border-bottom: 2px solid white;
+    }
+}
