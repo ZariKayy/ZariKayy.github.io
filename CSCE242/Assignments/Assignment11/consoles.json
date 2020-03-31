@@ -1,0 +1,62 @@
+[
+    {
+        "name":"Xbox",
+        "image":"",
+        "manufacturer":"Microsoft",
+        "currentModel":"Xbox One X (late 2020)",
+        "pastModels": ["Xbox", "Xbox 360", "Xbox One", "Xbox One X"],
+        "MSRP":"$499",
+        "exclusiveGames":"yes",
+        "rating": "5/5 stars"
+    },
+    {
+        "name":"PlayStation",
+        "image":"",
+        "manufacturer":"Sony",
+        "currentModel":"PlayStation 4",
+        "pastModels":"",
+        "MSRP":"$299",
+        "exclusiveGames":"yes",
+        "rating": "4.5/5 stars"
+    },
+    {
+        "name":"PC",
+        "image":"",
+        "manufacturer":"varies",
+        "currentModel":"N/A",
+        "pastModels":"N/A",
+        "MSRP":"$700-$1000",
+        "exclusiveGames":"no",
+        "rating": "5/5 stars"
+    },
+    {
+        "name":"Wii",
+        "image":"",
+        "manufacturer":"Nintendo",
+        "currentModel":"Wii",
+        "pastModels":"",
+        "MSRP":"$99",
+        "exclusiveGames":"yes",
+        "rating": "3.5/5 stars"
+    },
+    {
+        "name":"Nintendo Switch",
+        "image":"",
+        "manufacturer":"Nintendo",
+        "currentModel":"Nintendo Switch/Lite",
+        "pastModels":"",
+        "MSRP":"$",
+        "exclusiveGames":"yes",
+        "rating": "4/5 stars"
+    },
+    {
+        "name":"Nintendo DS",
+        "image":"",
+        "manufacturer":"Nintendo",
+        "currentModel":"Nintendo DSi XL",
+        "pastModels":"",
+        "MSRP":"$169",
+        "exclusiveGames":"yes",
+        "rating": "4.5"
+    }
+]

@@ -1,0 +1,30 @@
+body {
+    background: rgb(0, 0, 92);
+    font-family: fantasy;
+}
+h1 {
+    color: white;
+    text-align: center;
+}
+h3 {
+    font-size: 35px;
+}
+#console-list {
+    background: darkslategray;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+.oneConsole {
+    background: darkred;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 10px;
+}
+ul {
+    list-style-type: none;
+}
+img {
+    height: 200px;
+    width: auto;
+}
