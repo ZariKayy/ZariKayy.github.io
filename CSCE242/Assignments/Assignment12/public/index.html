@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js"></script>
+        <title></title>
+    </head>
+        <body>
+            <h1>My Favorite Songs</h1>
+            <div id="song-forms">
+                <div id="add-song" class="song-form">
+                    <h2>Add Song</h2>
+                    <p>
+                        <label for="txt-add-title">Title: </label>
+                        <input id="txt-add-title">
+                    </p>
+                    <p>
+                        <label for="txt-add-artist">Artist: </label>
+                        <input id="txt-add-artist">
+                    </p>
+                    <p>
+                        <label for="txt-add-album">Album: </label>
+                        <input id="txt-add-album">
+                    </p>
+                    <p>
+                        <label for="txt-add-year">Year: </label>
+                        <input id="txt-add-year">
+                    </p>
+                    <button id="btn-add-song">Add Song</button>
+                    <p id="error-add"></p>
+                </div>
+                <div id="song-list"></div>
+                <div id="song-details" class="song-form">
+                    <h2>Edit/Delete Songs:</h2>
+                    <span id="song-id" class="hidden"></span>
+                    <p>
+                        <label for="txt-title">Title: </label>
+                        <input id="txt-title">
+                    </p>
+                    <p>
+                        <label for="txt-artist">Artist: </label>
+                        <input id="txt-artist">
+                    </p>
+                    <p>
+                        <label for="txt-album">Album: </label>
+                        <input id="txt-album">
+                    </p>
+                    <p>
+                        <label for="txt-year">Year: </label>
+                        <input id="txt-year">
+                    </p>
+                    <button id="btn-edit-song">Edit Song</button>
+                    <p id="error-edit"></p>
+                    <button id="btn-delete-song">Delete Song</button>
+                    <p id="error-delete"></p>
+                </div>
+            </div>
+        </body>
+</html>

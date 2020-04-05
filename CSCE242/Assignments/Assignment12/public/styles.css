@@ -1,0 +1,46 @@
+body {
+    background: lightblue;
+    color: white;
+    font-family: fantasy;
+}
+.hidden {
+    display: none;
+}
+a, h1 {
+    color: lightcoral;
+    text-decoration: none;
+    text-align: center;
+}
+#song-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.song-section{
+    width: 90%;
+    border-radius: 5px;
+    background: rgb(255, 255, 141);
+    padding: 5px;
+    margin: 5px;
+}
+.song-section:hover{
+    background: slategray;
+}
+#song-forms{
+    display: flex;
+}
+.song-form {
+    background: lightcoral;
+    border-radius: 5px;
+    width: 50%;
+    height: 50%;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+.error-message {
+    color: red;
+}
+.success-message{
+    color: green;
+}
