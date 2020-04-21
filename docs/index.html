@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js"></script>
+        <title>Degree-Me-Bih</title>
+    </head>
+        <body>
+          <h1 class="title">Forgotten Hero</h1>
+            <nav id="nav-bar">
+                <ul>
+                    <li><a href="#"><p id="nav-title">Home</p></a></li>
+                    <li class="info-btn">
+                        <p id= "nav-title">Info &#8964</p>
+                        <div class="dropdown-content">
+                            <a href="#readme-section">READ.me</a>
+                            <a href="#video-section">Video Demo</a>
+                            <a href="#gallary-section">Gallery</a>
+                            <a href="#about-section">About the Authors</a>
+                        </div>
+                    </li>
+                    <li class="download-btn">
+                        <p id= "nav-title">Download &#8964</p>
+                        <div class="dropdown-content">
+                            <a href="https://github.com/SCCapstone/Degree-Me-Bih/archive/master.zip">ZIP File</a>
+                            <a href="https://github.com/SCCapstone/Degree-Me-Bih/archive/master.zip">TAR Ball</a>
+                            <a href="https://github.com/SCCapstone/Degree-Me-Bih">View On Github</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <div class="margin"></div>
+            <section class="parallax">
+                <div class="parallax-inner"></div>
+            </section>
+            <div class="margin"></div>
+                        <section id="readme-section">
+                <h2>README.md</h2>
+                <p>This is the Readme.md for the Degree-Me-Bih repository! The main goal of this project is to develop a 2D platformer using the Unity Game Development Engine and as such will be using C# scripts and the Unity Development Environment to create the project. In order to get started with installation, compilation, and testing, there is not much set up needed. All that is required is to have a text editor or IDE that supports C#, such as Visual Studio or JetBrains Rider installed and the Unity development environment version 2018.4.11f1 or newer installed. You can then clone this repository and edit the project and create any builds of the project using Unity's built in build function.</p>
+            </section>
+
+            <div class="margin"></div>
+            <section class="parallax2">
+                <div class="parallax-inner2"></div>
+            </section>
+            <div class="margin"></div>
+            <section id="video-section">
+                <h2>Demo Video</h2>
+                <div id="video-div">
+                    <iframe id="video" src="https://www.youtube.com/embed/wfoGZNrse6I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </section>
+
+            <div class="margin"></div>
+            <section class="parallax2">
+                <div class="parallax-inner2"></div>
+            </section>
+            <div class="margin"></div>
+                        <!-- Container for the image gallery -->
+            <div class="container" id="gallary-section">
+                <h2>Gallery</h2>
+                <div class="mySlides">
+                    <div class="numbertext">1 / 6</div>
+                        <img src="images/lvl1-guide.png" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                <div class="numbertext">2 / 6</div>
+                    <img src="images/lvl1-gems.png" style="width:100%">
+                </div>
+            
+                <div class="mySlides">
+                <div class="numbertext">3 / 6</div>
+                    <img src="images/lvl1-parkour.png" style="width:100%">
+                </div>
+            
+                <div class="mySlides">
+                <div class="numbertext">4 / 6</div>
+                    <img src="images/lvl2-gems.png" style="width:100%">
+                </div>
+            
+                <div class="mySlides">
+                <div class="numbertext">5 / 6</div>
+                    <img src="images/lvl2-parkour.png" style="width:100%">
+                </div>
+            
+                <div class="mySlides">
+                <div class="numbertext">6 / 6</div>
+                    <img src="images/boss.png" style="width:100%">
+                </div>
+            
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+                <div class="caption-container">
+                <p id="caption"></p>
+                </div>
+            
+                <div class="row">
+                <div class="column">
+                    <img class="demo cursor" src="images/lvl1-guide.png" style="width:100%" onclick="currentSlide(1)" alt="Mysterious Guide in Level 1">
+                </div>
+                <div class="column"> 
+                    <img class="demo cursor" src="images/lvl1-gems.png" style="width:100%" onclick="currentSlide(2)" alt="Collecting Gems and avoiding traps in Level 1">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/lvl1-parkour.png" style="width:100%" onclick="currentSlide(3)" alt="Checkpoint in Level 1">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/lvl2-gems.png" style="width:100%" onclick="currentSlide(4)" alt="Battle in Level 2">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/lvl2-parkour.png" style="width:100%" onclick="currentSlide(5)" alt="Jumping pillars in Level 2">
+                </div> 
+                <div class="column">
+                    <img class="demo cursor" src="images/boss.png" style="width:100%" onclick="currentSlide(6)" alt="Skeleton Boss Level">
+                </div>
+                </div>
+            </div>
+
+            <div class="margin"></div>
+            <section class="parallax2">
+                <div class="parallax-inner2"></div>
+            </section>
+            <div class="margin"></div>
+            
+            <section id="about-section">
+                <h2>About the Authors</h2>
+                <p>Click an Author's name to visit their LinkedIn Page</p>
+                <ul id="author-list">
+                    <li><a href="https://www.linkedin.com/in/cardi-ireland-0691b7121/">Cardi Ireland</a></li>
+                    <li><a href="https://www.linkedin.com/in/ariel-peterson-07ba41159/">Ariel Peterson</a></li>
+                    <li><a href="https://www.linkedin.com/in/marquis-wideman-728632150/">Marquis Wideman</a></li>
+                    <li><a href="https://www.linkedin.com/in/zari-case-a8a807171/">Zari Case</a></li>
+                    <li><a href="https://www.linkedin.com/in/clservance20/">Chaz Servance</a></li>
+                </ul>
+            </section>
+
+            <div class="margin"></div>
+            <section class="parallax2">
+                <div class="parallax-inner2"></div>
+            </section>
+            <div class="margin"></div>
+
+            <script>
+                var slideIndex = 1;
+                showSlides(slideIndex);
+                
+                function plusSlides(n) {
+                showSlides(slideIndex += n);
+                }
+                
+                function currentSlide(n) {
+                showSlides(slideIndex = n);
+                }
+                
+                function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("demo");
+                var captionText = document.getElementById("caption");
+                if (n > slides.length) {slideIndex = 1}
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";
+                dots[slideIndex-1].className += " active";
+                captionText.innerHTML = dots[slideIndex-1].alt;
+                }
+                </script>
+        </body>
+</html>
